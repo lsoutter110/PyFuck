@@ -81,7 +81,9 @@ def main():
 		raise Exception("incorrect number of args provided")
 
 	code = open(sys.argv[1], "r").read();
-	code.replace(R"\n", R"\\n")
+	code = code.replace("\\", R"\\")
+	#code = code.replace(R'"\n"', "chr(10)")
+	print(code)
 
 	pyf = from_str(code)
 	pyf = "eval("+from_str("exec('''")+"+"+pyf+"+"+from_str("''')")+")"
