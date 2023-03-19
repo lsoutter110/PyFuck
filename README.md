@@ -1,5 +1,5 @@
 # PyFuck
-Esoteric transpiler to 12-character Python: `evalstr[]()+`
+Esoteric transpiler to 12-character Python. It compiles python code to the `evalstr[]()+` character set.
 
 ## Command line
 `pyfuck.py` is invoked with the following arguments:
